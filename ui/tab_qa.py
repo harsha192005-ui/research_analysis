@@ -4,7 +4,7 @@ Ask Questions tab — multi-turn chat grounded in the full paper library.
 """
 import datetime
 import streamlit as st
-from langchain.schema import HumanMessage, AIMessage
+from langchain_core.messages import HumanMessage, AIMessage
 
 from core.database import get_all_papers, get_paper_by_id
 from core.models import suggest_model
